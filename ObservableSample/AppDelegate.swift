@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     fileprivate var _observers: Observable.ObserverContainer = []
+    fileprivate var _observersLock: NSRecursiveLock = NSRecursiveLock()
     
     public static var instance: AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
@@ -68,6 +69,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate: Observable {
+    var observersLock: NSRecursiveLock? {
+        get {
+            return self._observersLock
+        }
+    }
     
     typealias Observer = AppDelegateEvent
     var observers: Observable.ObserverContainer {

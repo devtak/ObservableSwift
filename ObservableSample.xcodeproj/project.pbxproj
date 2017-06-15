@@ -14,6 +14,7 @@
 		4A39ACFF1EEECDE1007EEC5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A39ACFD1EEECDE1007EEC5E /* LaunchScreen.storyboard */; };
 		4A39AD091EEECE11007EEC5E /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39AD071EEECE11007EEC5E /* Observable.swift */; };
 		4A39AD0A1EEECE11007EEC5E /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39AD081EEECE11007EEC5E /* Weak.swift */; };
+		4A7C75F71EF17E3E004F695E /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C75F61EF17E3E004F695E /* Lock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4A39AD001EEECDE1007EEC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A39AD071EEECE11007EEC5E /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		4A39AD081EEECE11007EEC5E /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
+		4A7C75F61EF17E3E004F695E /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				4A39AD071EEECE11007EEC5E /* Observable.swift */,
 				4A39AD081EEECE11007EEC5E /* Weak.swift */,
+				4A7C75F61EF17E3E004F695E /* Lock.swift */,
 			);
 			path = Observable;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A39ACF71EEECDE1007EEC5E /* ViewController.swift in Sources */,
+				4A7C75F71EF17E3E004F695E /* Lock.swift in Sources */,
 				4A39AD0A1EEECE11007EEC5E /* Weak.swift in Sources */,
 				4A39AD091EEECE11007EEC5E /* Observable.swift in Sources */,
 				4A39ACF51EEECDE1007EEC5E /* AppDelegate.swift in Sources */,
