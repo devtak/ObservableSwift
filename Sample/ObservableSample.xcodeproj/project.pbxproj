@@ -12,9 +12,9 @@
 		4A39ACFA1EEECDE1007EEC5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A39ACF81EEECDE1007EEC5E /* Main.storyboard */; };
 		4A39ACFC1EEECDE1007EEC5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A39ACFB1EEECDE1007EEC5E /* Assets.xcassets */; };
 		4A39ACFF1EEECDE1007EEC5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A39ACFD1EEECDE1007EEC5E /* LaunchScreen.storyboard */; };
-		4A39AD091EEECE11007EEC5E /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39AD071EEECE11007EEC5E /* Observable.swift */; };
-		4A39AD0A1EEECE11007EEC5E /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39AD081EEECE11007EEC5E /* Weak.swift */; };
-		4A7C75F71EF17E3E004F695E /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C75F61EF17E3E004F695E /* Lock.swift */; };
+		4A7579621F015629003BCE69 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75795F1F015629003BCE69 /* Lock.swift */; };
+		4A7579631F015629003BCE69 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7579601F015629003BCE69 /* Observable.swift */; };
+		4A7579641F015629003BCE69 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7579611F015629003BCE69 /* Weak.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		4A39ACFB1EEECDE1007EEC5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A39ACFE1EEECDE1007EEC5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A39AD001EEECDE1007EEC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A39AD071EEECE11007EEC5E /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
-		4A39AD081EEECE11007EEC5E /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
-		4A7C75F61EF17E3E004F695E /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
+		4A75795F1F015629003BCE69 /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
+		4A7579601F015629003BCE69 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		4A7579611F015629003BCE69 /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +74,12 @@
 		4A39AD061EEECE00007EEC5E /* Observable */ = {
 			isa = PBXGroup;
 			children = (
-				4A39AD071EEECE11007EEC5E /* Observable.swift */,
-				4A39AD081EEECE11007EEC5E /* Weak.swift */,
-				4A7C75F61EF17E3E004F695E /* Lock.swift */,
+				4A75795F1F015629003BCE69 /* Lock.swift */,
+				4A7579601F015629003BCE69 /* Observable.swift */,
+				4A7579611F015629003BCE69 /* Weak.swift */,
 			);
-			path = Observable;
+			name = Observable;
+			path = ../Observable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7579631F015629003BCE69 /* Observable.swift in Sources */,
 				4A39ACF71EEECDE1007EEC5E /* ViewController.swift in Sources */,
-				4A7C75F71EF17E3E004F695E /* Lock.swift in Sources */,
-				4A39AD0A1EEECE11007EEC5E /* Weak.swift in Sources */,
-				4A39AD091EEECE11007EEC5E /* Observable.swift in Sources */,
+				4A7579641F015629003BCE69 /* Weak.swift in Sources */,
+				4A7579621F015629003BCE69 /* Lock.swift in Sources */,
 				4A39ACF51EEECDE1007EEC5E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

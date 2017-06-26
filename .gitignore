@@ -17,8 +17,10 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 
-./ObservableSample.xcodeproj/xcuserdata
-./ObservableSample.xcodeproj/project.xcworkspace/xcuserdata
+./Observable.xcodeproj/xcuserdata
+./Observable.xcodeproj/project.xcworkspace/xcuserdata
+./Sample/ObservableSample.xcodeproj/xcuserdata
+./Sample/ObservableSample.xcodeproj/project.xcworkspace/xcuserdata
 
 
 ## Other
