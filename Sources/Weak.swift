@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public struct Weak<T: AnyObject> {
     
     private(set) weak var object: T?
@@ -26,7 +25,7 @@ extension Weak: Hashable, Equatable {
         return self.rawPointer.hashValue
     }
     
-    public static func ==(lhs: Weak<T>, rhs: Weak<T>) -> Bool {
+    public static func == (lhs: Weak<T>, rhs: Weak<T>) -> Bool {
         return lhs.rawPointer == rhs.rawPointer
     }
     

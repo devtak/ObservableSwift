@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public protocol Observable: class {
     
     associatedtype Observer
@@ -26,8 +25,7 @@ extension Observable {
             lock.scopeLock {
                 self.observers.insert(Weak(observer as AnyObject))
             }
-        }
-        else {
+        } else {
             self.observers.insert(Weak(observer as AnyObject))
         }
     }
@@ -35,7 +33,7 @@ extension Observable {
     public func removObserver(_ observer: Observer) {
         let rawPointer = UnsafeRawPointer(Unmanaged<AnyObject>.passUnretained(observer as AnyObject).toOpaque())
         func remove() {
-            let trashs = self.observers.filter{ $0.rawPointer == rawPointer }
+            let trashs = self.observers.filter { $0.rawPointer == rawPointer }
             for trash in trashs.reversed() {
                 self.observers.remove(trash)
             }
@@ -45,8 +43,7 @@ extension Observable {
             lock.scopeLock {
                 remove()
             }
-        }
-        else {
+        } else {
             remove()
         }
     }
@@ -69,11 +66,10 @@ fileprivate extension Observable {
         var filtered: [Observer] = []
         if let lock = self.observersLock {
             lock.scopeLock {
-                filtered = self.observers.filter{ $0.object != nil }.map{ $0.object! as! Observer }
+                filtered = self.observers.filter { $0.object != nil }.flatMap { $0.object as? Observer }
             }
-        }
-        else {
-            filtered = self.observers.filter{ $0.object != nil }.map{ $0.object! as! Observer }
+        } else {
+            filtered = self.observers.filter { $0.object != nil }.flatMap { $0.object as? Observer }
         }
 
         if self.observers.count != filtered.count {
@@ -90,7 +86,7 @@ fileprivate extension Observable {
     
     func clearInvalidListeners() {
         func remove() {
-            let trashs = self.observers.filter{ $0.object == nil }
+            let trashs = self.observers.filter { $0.object == nil }
             for trash in trashs.reversed() {
                 self.observers.remove(trash)
             }
@@ -100,8 +96,7 @@ fileprivate extension Observable {
             lock.scopeLock {
                 remove()
             }
-        }
-        else {
+        } else {
             remove()
         }
     }

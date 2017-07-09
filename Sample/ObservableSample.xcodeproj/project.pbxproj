@@ -79,7 +79,7 @@
 				4A7579611F015629003BCE69 /* Weak.swift */,
 			);
 			name = Observable;
-			path = ../Observable;
+			path = ../Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

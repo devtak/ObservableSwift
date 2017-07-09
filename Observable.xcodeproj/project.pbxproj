@@ -59,8 +59,8 @@
 		4A75792F1F015576003BCE69 = {
 			isa = PBXGroup;
 			children = (
-				4A75793B1F015576003BCE69 /* Observable */,
-				4A7579461F015576003BCE69 /* ObservableTests */,
+				4A75793B1F015576003BCE69 /* Sources */,
+				4A7579461F015576003BCE69 /* Tests */,
 				4A75793A1F015576003BCE69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,7 +74,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A75793B1F015576003BCE69 /* Observable */ = {
+		4A75793B1F015576003BCE69 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				4A7579531F0155DB003BCE69 /* Lock.swift */,
@@ -83,16 +83,16 @@
 				4A75793C1F015576003BCE69 /* Observable.h */,
 				4A75793D1F015576003BCE69 /* Info.plist */,
 			);
-			path = Observable;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		4A7579461F015576003BCE69 /* ObservableTests */ = {
+		4A7579461F015576003BCE69 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				4A7579471F015576003BCE69 /* ObservableTests.swift */,
 				4A7579491F015576003BCE69 /* Info.plist */,
 			);
-			path = ObservableTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +117,7 @@
 				4A7579351F015576003BCE69 /* Frameworks */,
 				4A7579361F015576003BCE69 /* Headers */,
 				4A7579371F015576003BCE69 /* Resources */,
+				4A7C119A1F1232BC00330627 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -200,6 +201,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A7C119A1F1232BC00330627 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A7579341F015576003BCE69 /* Sources */ = {
@@ -341,7 +359,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Observable/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.devtak.Observable;
@@ -361,7 +379,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Observable/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.devtak.Observable;

@@ -17,7 +17,7 @@ public protocol Lock {
 
 public extension Lock {
     
-    func scopeLock(criticalSection: () -> Void) -> Void {
+    func scopeLock(criticalSection: () -> Void) {
         defer {
             self.unlock()
         }
